@@ -65,7 +65,7 @@ Time is not kind to images and components - as vulnerabilities are discovered, A
 [#review_cve_images]
 == Image CVE Vulnerability Analysis
 
-* Click back to the Fixable CVEs tab.
+* Click back to the Observed CVEs tab.
 +
 The CVE list for each image focuses on the severe - CVSS >7 - and the “fixable,” where the upstream package maintainers have published a fix. 
 
@@ -73,7 +73,7 @@ The CVE list for each image focuses on the severe - CVSS >7 - and the “fixable
 +
 image::vulnerabilities/04-vuln.png[Vuln 4, 700]
 
-* Click on a Fixable CVE in the list, like CVE-2018-14618
+* Click on a Observed CVE in the list, like CVE-2018-14618
 +
 image::vulnerabilities/05-vuln.png[Vuln 5, 700]
 +
@@ -83,6 +83,20 @@ It’s a vulnerability in curl and libcurl - and these packages are present eith
 
 NOTE: ACS scanner uses to fetch and update the vulnerability definitions from http://definitions.stackrox.io/. On the other hand collector-modules.stackrox.io is the other FQDN that will be used in online mode.
 These two are used by Central in ACS to fetch vulnerability details and collector modules.
+
+* In this screen, you can choose CVE to defer or false positive and sending your request to approvel manager.
++
+image::vulnerabilities/09-vuln.png[Vuln 9, 700]
++
+image::vulnerabilities/10-vuln.png[Vuln 10, 700]
++
+image::vulnerabilities/11-vuln.png[Vuln 11, 700]
++
+image::vulnerabilities/12-vuln.png[Vuln 12, 700]
++
+image::vulnerabilities/13-vuln.png[Vuln 13, 700]
++
+
 
 [#image_correlation_deployments]
 == Image CVE correlation with Deployments
