@@ -90,10 +90,13 @@ image::vulnerabilities/09-vuln.png[Vuln 9, 700]
 +
 image::vulnerabilities/10-vuln.png[Vuln 10, 700]
 +
+* For deferral:
 image::vulnerabilities/11-vuln.png[Vuln 11, 400]
 +
+* For false positive
 image::vulnerabilities/12-vuln.png[Vuln 12, 400]
 +
+* After sending your request, your approver can see your request at the Risk acceptance section.This request can  be approve/deny  by approver.
 image::vulnerabilities/13-vuln.png[Vuln 13, 800]
 +
 
