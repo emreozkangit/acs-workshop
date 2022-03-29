@@ -126,6 +126,10 @@ image::vulnerabilities/06-vuln.png[Vuln 6, 700]
 These are the five deployments running right now with containers that come from images with this vulnerability present.
 “Up and running” is a risk factor - vulnerabilities are only going to be exploited if they’re in a running container somewhere in the cluster.
 +
+* You can click the Images tab to see which images has this CVE.
++
+image::vulnerabilities/15-vuln.png[Vuln 15, 700]
++
 We display the critical information here - so you can see that we have this present in the Production cluster, in Namespaces like Payments, which starts to provide context to the security team.
 +
 The last column on the right is the Risk priority - which ACS has already determined from configuration and runtime activity in the deployment.
