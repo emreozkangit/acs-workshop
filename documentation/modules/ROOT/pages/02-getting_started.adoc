@@ -2,20 +2,17 @@
 include::_attributes.adoc[]
 :profile: acs
 
-We will install ACS thought three main options and afterwards we will install an small demo that will serve examples to our workshop.
+IMPORTANT: This section is just for information.Presenter  will show how can you install ACS during the workshop.
 
-NOTE: You can request in RHPDS the environment already installed (including the demo) - Go to Multi-Product Demo -> Openshift 4 Advanced Cluster Security 3
+We can install ACS thought two main options.
 
-The three options depicted are:
+The two options depicted are:
 
-* Option 1 - ACS Operator Install Manually (recommended to learn the process)
-* Option 2 - Deploying ACS with Ansible (if you're in a rush and/or love Ansible)
-* Option 3 - Deploying ACS with Openshift GitOps (the GitOps way!)
-
-IMPORTANT: Independently on how you're installing, please https://redhat-scholars.github.io/acs-workshop/acs-workshop/02-getting_started.html#deploy_demo_acs[follow the Mandatory deploy step] of ACS Deploy Demo to complete this module.
+* Option 1 - ACS Operator Install Manually (recommended to learn the process- more easy one)
+* Option 2 - Helm way
 
 [#install_acs_operator]
-== ACS Operator Install - Option 1
+== ACS Operator Install 
 
 . Find and the Advanced Cluster Security Operator from the Operator Hub.
 +
@@ -255,72 +252,3 @@ oc get pods -n stackrox -w
 . At the end of the installation, go to the central console and check the correct attachment of the secured cluster. 
 +
 image::install/11_verify_cluster_list.png[ACS Operator 11, 800]
-
-[#deploy_demo_acs] 
-== Deploying Demo in ACS - Mandatory
-
-IMPORTANT: Independent of which option to install you used, you need to deploy the ACS Demo into your cluster.
-
-. Download the repo with the demo:
-+
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----
-ansible-galaxy collection install kubernetes.core
-pip install kubernetes jmespath
-git clone https://github.com/rcarrata/rhacs-demo
-cd rhacs-demo
-----
-
-. Apply the ansible demo into the cluster:
-+
-WARNING: you must be logged to the OpenShift cluster before you execute the playbook.
-+
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----
-ansible-playbook rhacs-demo.yaml -e ocp4_workload_stackrox_central_admin_password=[your_pass]<1>
-----
-<1> The same password you obtained in the step 1 of the ``ACS login`` section.
-
-. After the Playbook execution (and if everything worked properly), the output will be the following:
-+
-[.console-output]
-[source,bash,subs="attributes+,+macros"]	
-----	
-TASK [ocp4_workload_stackrox_demo_apps : post_workload tasks complete] ********************************************************
-ok: [localhost] => {
-    "msg": "Post-Workload Tasks completed successfully."
-}
-----
-
-[#deploy_apps] 
-== Deploying Apps - Optional
-
-If you do not plan to follow the remaining sections (which are based on deploying the demo) and prefer to play and make your own findings, simply follow the steps below:
-
-. Create a new project:
-+
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-oc new-project test
-----
-
-. Start some applications with critical vulnerabilities:
-+
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-oc run shell --labels=app=shellshock,team=test-team \
-  --image=vulnerables/cve-2014-6271 -n test
-----
-+
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-$ oc run samba --labels=app=rce \
-  --image=vulnerables/cve-2017-7494 -n test
-----
-
-. Navigate to the RHACS portal to view the violations.

@@ -3,8 +3,6 @@
 ** xref:02-getting_started#install_acs_operator[Install ACS Operator]
 ** xref:02-getting_started#install_acs_central[Install ACS Central Cluster]
 ** xref:02-getting_started#config_acs_securedcluster[Configuration of the ACS Secured Cluster ]
-** xref:02-getting_started#deploy_demo_acs[Deploying Demo in ACS]
-** xref:02-getting_started#deploy_apps[Deploying Apps]
 
 * xref:03-overview-acs.adoc[ACS Overview]
 ** xref:03-overview-acs.adoc#acs_architecture[ACS Architecture]
