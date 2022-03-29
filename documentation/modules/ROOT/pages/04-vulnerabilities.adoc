@@ -117,7 +117,9 @@ ACS can use other sources of information in OpenShift to judge the risk that a g
 
 The first risk factor - is the vulnerable component actually in a running deployment?
 
-* Click on the 6 Deployments button in the Related Entities column on the right.
+* For same CVE,Click on the 5 Deployments button in the Related Entities column on the right.
++
+image::vulnerabilities/14-vuln.png[Vuln 14, 700]
 +
 image::vulnerabilities/06-vuln.png[Vuln 6, 700]
 +
