@@ -56,6 +56,10 @@ image::vulnerabilities/03-vuln.png[Vuln 3, 700]
 +
 The Dockerfile tab view shows the layer-by-layer view and, as you can see, the most recent layers are also several years old.
 +
+Click  one of the Layer and expand the view
++
+image::vulnerabilities/08-vuln.png[Vuln 8, 700]
++
 Time is not kind to images and components - as vulnerabilities are discovered, ACS will display newly discovered CVEs.
 
 [#review_cve_images]
