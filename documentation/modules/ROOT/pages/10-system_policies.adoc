@@ -78,3 +78,22 @@ image::policies/10-policies.png[ACS Policies 10, 800]
 
 [#create_new_policy]
 == Create new Policy
+You can create new security policies from the system policies view.
+
+. On the RHACS portal, navigate to Platform Configuration → Policies.
+. Click Create policy
++
+image::policies/11-policies.png[ACS Policies 11, 800]
++
+. Enter the following details about your policy in the Policy details section:
+* Enter an example Name for the policy. ``Example Docker Hub Policy`` 
+We will create an example policy for Docker Hub Registry because we dont want to download images from this registry.
+* Select a Severity level for this policy, either Critical, High, Medium, or Low. You can select ``Medium``
+* Select policy Categories you want to apply to this policy. Select ``Devops Best Practices``
+* Enter details about the policy in the Description box.
+* Enter an explanation about why the policy exists in the Rationale box. ``we dont want to download images from this registry.``
+* Enter steps to resolve violations of this policy in the Guidance box.Developer can see this message. For example ``You can use just registry.redhat.io images. Please change your current image.``
+* Optional: Under the MITRE ATT&CK section, select the tactics and the techniques you want to specify for the policy.You can add tactics and techniques for this policy.
++
+image::policies/12-policies.png[ACS Policies 12, 900]
++
