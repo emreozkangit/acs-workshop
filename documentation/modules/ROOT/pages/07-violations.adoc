@@ -29,7 +29,11 @@ You’ll see that it’s the same information presented in a CI/CD tool or devel
 [#violations_runtime]
 == Violations Runtime Example
 
-* Click on a Violation of the "Netcat Execution Detected" in Image policy. Again, you may have to look or search (filter) for it. The violation details appear on the right.
+* Click on a Violation of the "Netcat Execution Detected" in Image policy. Again, you may have to look or search (filter) for it. 
+
+image::violations/05-violations.png[Violations 5, 600]
+
+The violation details appear on the right.
 
 image::violations/03-violations.png[Violations 3, 600]
 
