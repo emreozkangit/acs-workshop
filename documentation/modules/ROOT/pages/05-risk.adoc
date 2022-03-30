@@ -56,7 +56,7 @@ This 4 process started without our knowledge after creating baseline.However you
 +
 image::risks/08-risks.png[ACS Risks 8, 500]
 +
-* You can click the expand button to find detailed(who started container, what is command)
+* You can click the expand button to find detail.(who started container, what is command)
 +
 image::risks/10-risks.png[ACS Risks 10, 500]
 +
@@ -107,15 +107,16 @@ image::risks/06-risks.png[ACS Risks 6, 800]
 +
 Do the same to add the ``CVE`` filter (is one of the keys shown by default).
 
-NOTE: This policy create step is just for information.We will cover policy creation at the ``System Policies`` section.
-+
-image::risks/11-risks.png[ACS Risks 11, 800]
-+
-
 [TIP]
 ====
 Now that we’ve searched for interesting criteria, we can create a policy from the search filter to automatically identify our criteria going forward.
 We can do that by clicking the ``Create Policy`` button, at the upper right (indicated by the red arrow in the above picture) and following the form steps.
 ====
+
+NOTE: This policy create step is just for information.We will cover policy creation at the ``System Policies`` section.
+
++
+image::risks/11-risks.png[ACS Risks 11, 800]
++
 
 Now let's review the Network Graph and the Network Policies in RH ACS!
