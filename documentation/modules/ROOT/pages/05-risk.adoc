@@ -116,7 +116,9 @@ We can do that by clicking the ``Create Policy`` button, at the upper right (ind
 NOTE: This policy create step is just for information.We will cover policy creation at the ``System Policies`` section.
 
 +
+
 image::risks/11-risks.png[ACS Risks 11, 800]
+
 +
 
 Now let's review the Network Graph and the Network Policies in RH ACS!
