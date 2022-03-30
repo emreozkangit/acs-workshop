@@ -39,5 +39,6 @@ image::configmgmt/03-config.png[Config 3, 400]
 
 image::configmgmt/04-config.png[Config 4, 800]
 
+* You can get export every screen as shown below.
 
-
+image::configmgmt/05-config.png[Config 5, 500]
