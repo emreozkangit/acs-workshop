@@ -99,17 +99,13 @@ This is the evidence export that your auditors will want to see for proof that t
 [#compliance_operator]
 == Integrating the OpenShift Compliance Operator with ACS 
 
+NOTE: You should access your bastion host via SSH before do this step.
+
 Red Hat Advanced Cluster Security for Kubernetes supports OpenShift Container Platform configuration compliance standards through an integration with the OpenShift Container Platform Compliance Operator. 
 
 Follow the next steps to install and integrate the Compliance Operator with Advanced Cluster Security.
 
 * Create a Namespace object YAML file by running:
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-oc apply -f co-ns.yaml
-----
 
 [.console-output]
 [source,bash,subs="attributes+,+macros"]	
@@ -119,6 +115,13 @@ kind: Namespace
 metadata:
   name: openshift-compliance	
 ----
+
+[.console-input]
+[source,bash,subs="attributes+,+macros"]	
+----	
+oc apply -f co-ns.yaml
+----
+
 
 * Create the Compliance Operator OperatorGroup object YAML file by running:
 
@@ -205,12 +208,6 @@ We now want to make sure that the nodes are scanned appropiately. For this, weâ€
 
 * Create a ScanSettingBinding object that binds to the default ScanSetting object and scans the cluster using the cis and cis-node profiles.
 
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-oc apply -f co-scan.yaml
-----
-
 [.console-output]
 [source,bash,subs="attributes+,+macros"]	
 ----	
@@ -227,6 +224,12 @@ settingsRef:
   apiGroup: compliance.openshift.io/v1alpha1
   kind: ScanSetting
   name: default
+----
+
+[.console-input]
+[source,bash,subs="attributes+,+macros"]	
+----	
+oc apply -f co-scan.yaml
 ----
 
 * Check the scansettingbinding generated:
