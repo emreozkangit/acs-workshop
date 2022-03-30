@@ -20,9 +20,13 @@ These policies come from us at Red Hat - our expertise, our interpretation of in
 [#system_policies_example]
 == System Policies Build and Deploy Example
 
-* Click on the Red Hat Package Manager in Image Policy. Highlight the right-hand side policy details.
+* Click on the Red Hat Package Manager in Image Policy to view policy details.
 
-image::policies/01-policies.png[ACS Policies 1, 800]
+NOTE: You can use the filter.
+image::policies/01-policies.png[ACS Policies 5, 400]
+
+image::policies/06-policies.png[ACS Policies 6, 800]
+image::policies/07-policies.png[ACS Policies 7, 800]
 
 This is what an ACS policy looks like - front and center you can see the Rationale and Remediation designed to give the DevOps team some context about why this issue is important for security, and more importantly, what to do about the issue.
 
