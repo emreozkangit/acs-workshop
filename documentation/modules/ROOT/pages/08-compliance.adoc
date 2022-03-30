@@ -353,6 +353,9 @@ image::compliance/10_compliance.png[ACS 10, 700]
 * In order to see the impact on NIST 800-190 scores:
 * Navigate back to the compliance page.
 * Click "Scan Environment" in the upper right.
+
+image::compliance/12_compliance.png[ACS 12, 800]
+
 * In the section labeled "PASSING STANDARDS ACROSS CLUSTERS", click on NIST 800-190.
 * Scroll down to control 4.2.2 and verify that the control now reports 100% compliance.
 
