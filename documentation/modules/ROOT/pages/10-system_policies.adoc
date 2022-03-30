@@ -22,7 +22,8 @@ These policies come from us at Red Hat - our expertise, our interpretation of in
 
 * Click on the Red Hat Package Manager in Image Policy to view policy details.
 
-NOTE: You can use the filter.
+* You can use the filter.
++
 image::policies/01-policies.png[ACS Policies 5, 400]
 
 image::policies/06-policies.png[ACS Policies 6, 800]
