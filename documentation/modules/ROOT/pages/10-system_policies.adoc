@@ -126,7 +126,11 @@ Let's look differences:
 *** ``Runtime`` - Red Hat Advanced Cluster Security for Kubernetes kills all pods that match the conditions of the policy or blocks the action taken on the pods.
 
 . Click ``Next`` 
-. ACS comes some default policy criteria with different categories. ``Image Registry`` , ``Image Contents`` Let's lookup this criterias.You can drag and drop these criterias
+. ACS comes some default policy criteria with different categories. ``Image Registry`` , ``Image Contents`` etc. Let's lookup this criterias.You can drag and drop these criterias
 +
-image::policies/14-policies.png[ACS Policies 14, 900]
+image::policies/14-policies.png[ACS Policies 14, 400]
++
+. We will use ``Image Registry`` criteria at the ``Image Registry`` category as shown below.You can drag and drog and fill-up the box with ``hub.docker.io``
++
+image::policies/15-policies.png[ACS Policies 15, 800]
 +
