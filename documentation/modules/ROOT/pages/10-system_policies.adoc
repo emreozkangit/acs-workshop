@@ -99,9 +99,7 @@ image::policies/12-policies.png[ACS Policies 12, 900]
 +
 . Click ``Next``
 . In the Policy behavior section, select the Lifecycle stages and Event sources (Runtime lifecycle only) for the policy.
-* Choose Lifecycle Stages to which your policy is applicable, from Build, Deploy, or Runtime.  We will select "Build" and "Deploy" for this example. 
-
-You can select more than one stage.
+* Choose Lifecycle Stages to which your policy is applicable, from Build, Deploy, or Runtime.  We will select "Build" and "Deploy" for this example. You can select more than one stage.
 
 ** Build-time policies apply to image fields such as CVEs and Dockerfile instructions.
 
@@ -126,3 +124,5 @@ Let's look differences:
 *** ``Deploy`` - Red Hat Advanced Cluster Security for Kubernetes blocks creation of deployments that match the conditions of the policy. In clusters with admission controller enforcement, the Kubernetes or OpenShift Container Platform API server blocks all noncompliant deployments. In other clusters, Red Hat Advanced Cluster Security for Kubernetes edits noncompliant deployments to prevent pods from being scheduled.
 
 *** ``Runtime`` - Red Hat Advanced Cluster Security for Kubernetes kills all pods that match the conditions of the policy or blocks the action taken on the pods.
+
+. Click ``Next``
