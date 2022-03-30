@@ -17,6 +17,8 @@ image::network-flow/00-network.png[Network Flow 1, 600]
 
 You can change the time frame in the upper right dropdown, and the legend at bottom left 
 
+image::network-flow/06-network.png[Network Flow 6, 500]
+
 * Zoom in on Payments Namespace
 
 As we zoom in, the namespace boxes show the individual deployment names
