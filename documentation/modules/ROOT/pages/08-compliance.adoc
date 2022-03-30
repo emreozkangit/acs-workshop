@@ -333,14 +333,19 @@ There are two separate default system policies that, together, meet this control
 
 * Navigate to Platform Configuration -> System Policies
 * Find and click on the policy named, "90-day Image Age" which by default is second in the list. We're not going to change this policy other than to enable enforcement.
-* Click Edit to get to the Policy settings.
-* Click Next at the upper right to get to the Policy Criteria page.
-* Click Next at the upper right to get to the Violations Preview page.
-* Click Next at the upper right to get to the Enforcement Options page.
-* On the enforcement options, click On for both Build and Deploy enforcement. Click Save, and then X to close.
-* At the main System Policies page, find the Policy named, "Latest tag" and repeat steps 3 - 7 to enable enforcement and save the policy.
 
-image::compliance/06_nist1.png[ACS 8, 400]
+image::compliance/08_compliance.png[ACS 8, 700]
+
+* Click Edit to get to the Policy settings.
+
+image::compliance/09_compliance.png[ACS 9, 700]
+
+* Click Next at the left side to get to the Policy behaviour page.
+* On the response method page, click On for both Build and Deploy enforcement. Click Save, and then X to close.
+
+image::compliance/10_compliance.png[ACS 10, 700]
+
+* At the main System Policies page, find the Policy named, "Latest tag" and repeat same steps to enable enforcement and save the policy.
 
 [#acs_policy_compliance_nist_view]
 === View Updated Compliance Scan Results in ACS
@@ -356,13 +361,20 @@ image::compliance/07_nist2.png[ACS 9, 700]
 [#acs_policy_compliance_nist_revert]
 === Revert the Policy Changes
 
-To avoid rejecting any other deployments to the cluster, you should disable the enforcement after viewing the updated ACS results.
+IMPORTANT: To avoid rejecting any other deployments to the cluster, you should disable the enforcement after viewing the updated ACS results.
 
 Navigate to Platform Configuration -> System Policies
-Find and click on the policy named, "90-day Image Age" which by default is second in the list. Click Edit to get to the Policy settings.
+Find and click on the policy named, "90-day Image Age" which by default is second in the list. 
 
-* Click Next at the upper right to get to the Policy Criteria page.
-* Click Next at the upper right to get to the Violations Preview page.
-* Click Next at the upper right to get to the Enforcement Options page.
-* On the enforcement options, click Off for both Build and Deploy enforcement. Click Save, and then X to close.
+image::compliance/08_compliance.png[ACS 8, 700]
+
+* Click Edit to get to the Policy settings.
+
+image::compliance/09_compliance.png[ACS 9, 700]
+
+* Click Next at the left side to get to the Policy behaviour page.
+
+image::compliance/11_compliance.png[ACS 11, 700]
+
+* On the Response method options, just click Inform. Click Save, and then X to close.
 * At the main System Policies page, find the Policy named, "Latest tag" and repeat steps 3 - 7 to disable enforcement and save the policy.
