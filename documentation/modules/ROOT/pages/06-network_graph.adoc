@@ -15,11 +15,15 @@ In the upper left you’ll see the dropdown for clusters so I can easily navigat
 
 image::network-flow/00-network.png[Network Flow 1, 600]
 
-You can change the time frame in the upper right dropdown, and the legend at bottom left 
+You can change the time frame in the upper right dropdown
 
 image::network-flow/06-network.png[Network Flow 6, 500]
 
-* Zoom in on Payments Namespace
+And the legend at bottom left shows the meaning of icons.
+
+image::network-flow/07-network.png[Network Flow 7, 500]
+
+* Let's zoom in on Backend Namespace
 
 As we zoom in, the namespace boxes show the individual deployment names
 
@@ -28,6 +32,15 @@ As we zoom in, the namespace boxes show the individual deployment names
 * Clicking on a deployment brings up details of the types of traffic observed including source or destination and ports.
 
 image::network-flow/01-network.png[Network Flow 1, 800]
+
+NOTE: You can use filters as shown as at previous screenshot.
+
+* Another great example is shown ```Operations``` Project.Let's look at this project. And Click ``jump-host`` deployment as shown below.
+
+image::network-flow/08-network.png[Network Flow 8, 800]
+
+You can see some anomalous flows. This flows occured after creating baseline. You can add this flows to your baseline.
+
 
 [#network_graph_views]
 == Network Graph Views
