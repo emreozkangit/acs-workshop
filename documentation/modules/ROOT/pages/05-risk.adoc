@@ -56,6 +56,10 @@ This 4 process started without our knowledge after creating baseline.However you
 +
 image::risks/08-risks.png[ACS Risks 8, 500]
 +
+* You can click the expand button to find detailed(who started container, what is command)
++
+image::risks/10-risks.png[ACS Risks 10, 500]
++
 
 * Click on the header bar within the ``Event Timeline`` section ( in the picture, at any point on the surface covered by the red rectangle )
 +
