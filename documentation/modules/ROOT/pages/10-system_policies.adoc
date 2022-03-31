@@ -128,9 +128,9 @@ Let's look differences:
 . Click ``Next`` 
 . ACS comes some default policy criteria with different categories. ``Image Registry`` , ``Image Contents`` etc. Let's lookup this criterias.You can drag and drop these criterias. For detailed information: https://docs.openshift.com/acs/3.69/operating/manage-security-policies.html#policy-criteria_manage-security-policies
 +
-image::policies/14-policies.png[ACS Policies 14, 200]
+image::policies/14-policies.png[ACS Policies 14, 100]
 +
-. We will use ``Image Registry`` criteria at the ``Image Registry`` category as shown below.You can drag and drog and fill-up the box with ``hub.docker.io``
+. We will use ``Image Registry`` criteria at the ``Image Registry`` category as shown below.You can drag and drog and fill-up the box with ``docker.io``
 +
 image::policies/15-policies.png[ACS Policies 15, 800]
 +
@@ -141,6 +141,15 @@ image::policies/15-policies.png[ACS Policies 15, 800]
 * You can click Add exclusion scope to use Exclude by Scope to exclude deployments, clusters, namespaces, and labels you specify, it means that the policy will not apply to the entities that you select. You can add multiple scopes and also use regular expressions in RE2 Syntax for namespaces and labels. However, you cannot use regular expressions for selecting deployments.
 
 * For Excluded Images (Build Lifecycle only), select all images that you do not want to trigger a violation for.
++
+image::policies/16-policies.png[ACS Policies 16, 800]
++
 . Click ``Next``
 . In the Review policy section, preview the policy violations at the right side.
 . Click ``Save``
+
+Now let's check the new policy. We will try to deploy application on Openshift Console.
+. Firstly, we should find our console address.
++
+image::policies/workshop.png[ACS Policies 17, 800]
++
