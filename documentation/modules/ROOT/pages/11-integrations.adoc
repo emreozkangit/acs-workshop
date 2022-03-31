@@ -129,22 +129,22 @@ image::integrations/10-webhook.png[OAuth 19, 800]
 image::policies/workshop.png[OAuth 20, 800]
 +
 image::policies/console4.png[OAuth 21, 800]
-
++
 . Try to get terminal one of the pod.Filter and Click ``payments`` project as shown below.
 +
-image::policies/11-webhook.png[OAuth 22, 800]
+image::integrations/11-webhook.png[OAuth 22, 800]
 +
 * We will try to get terminal. Click ``Pod Name``
 +
-image::policies/12-webhook.png[OAuth 23, 800]
+image::integrations/12-webhook.png[OAuth 23, 800]
 +
 * Click ``Terminal``
 +
-image::policies/13-webhook.png[OAuth 24, 800]
-
+image::integrations/13-webhook.png[OAuth 24, 800]
++
 . Let's lookup your webhook site for this violation information.
 +
-image::policies/14-webhook.png[OAuth 25, 800]
+image::integrations/14-webhook.png[OAuth 25, 800]
 
 [.console-input]
 [source,json,subs="attributes+,+macros"]	
