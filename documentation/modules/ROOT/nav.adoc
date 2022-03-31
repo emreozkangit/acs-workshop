@@ -58,9 +58,6 @@
 ** xref:10-system_policies.adoc#create_new_policy[Create New Policy]
 
 * xref:11-integrations.adoc[ACS Integrations]
-** xref:11-integrations.adoc#integrate_with_internal_openshift_registry[Integrate with Internal Openshift Registry]
-*** xref:11-integrations.adoc#integrate_with_internal_openshift_registry_config_acs[Configure RHACS integration for Internal Openshift Registry]
-** xref:11-integrations.adoc#integrate_acs_slack[Integrate ACS with Slack]
 ** xref:11-integrations.adoc#integrate_acs_oauth[Integrate ACS with OpenShift OAuth]
 ** xref:11-integrations.adoc#integrate_acs_sso[Integrate ACS with OpenShift RHSSO]
 

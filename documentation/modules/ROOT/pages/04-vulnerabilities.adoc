@@ -126,7 +126,7 @@ image::vulnerabilities/06-vuln.png[Vuln 6, 700]
 These are the five deployments running right now with containers that come from images with this vulnerability present.
 “Up and running” is a risk factor - vulnerabilities are only going to be exploited if they’re in a running container somewhere in the cluster.
 +
-* You can click the Images tab to see which images has this CVE.
+* You can click the Images tab to see which images have this CVE.
 +
 image::vulnerabilities/15-vuln.png[Vuln 15, 700]
 +
