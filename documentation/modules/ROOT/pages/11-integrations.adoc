@@ -92,6 +92,98 @@ image::integrations/03-webhook.png[OAuth 12, 800]
 
 . Enter a ``Test Webhook`` for Integration Name and Enter the webhook URL(you copied URL before) in the Endpoint field.
 . Turn on the Enable Audit Logging toggle, to receive alerts about all the changes made in Red Hat Advanced Cluster Security for Kubernetes.
-. Click ``Test``
+. Click ``Test`` 
 +
 image::integrations/04-webhook.png[OAuth 13, 800]
+
+. If your test result success,then Click ``Save``
++
+image::integrations/05-webhook.png[OAuth 14, 800]
+
+. You should see 2 alert message on your webhook site; Test message and Created Webhook message. Let's examine.
++
+image::integrations/06-webhook.png[OAuth 15, 800]
+
+=== Configuring policy notifications
+
+Now, we will enable notification one of  the policy and  will try to get alert of this policy violations.
+
+. On the RHACS portal, navigate to ``Platform Configuration`` → ``Policies`` and Find  ``Kubernetes Actions: Exec into Pod`` policy using filter. Follow up the below screenshot steps.
++
+image::integrations/07-webhook.png[OAuth 16, 800]
+
+. Click the name of the policy and ``Actions``and ``Edit Policy`` 
++
+image::integrations/08-webhook.png[OAuth 17, 800]
+
+. At the right side, you should see your webhook name we created earlier. Enable your webhook name and ``save`` the policy.
++
+image::integrations/09-webhook.png[OAuth 18, 800]
+
+. Now, you should see like this in the policy page.
++
+image::integrations/10-webhook.png[OAuth 19, 800]
+
+. Let's try to create a new violation for this policy. Login your Openshift Console.You can find details on your workshop page as shown below.
++
+image::policies/workshop.png[OAuth 20, 800]
++
+image::policies/console4.png[OAuth 21, 800]
+
+. Try to get terminal one of the pod.Filter and Click ``payments`` project as shown below.
++
+image::policies/11-webhook.png[OAuth 22, 800]
++
+* We will try to get terminal. Click ``Pod Name``
++
+image::policies/12-webhook.png[OAuth 23, 800]
++
+* Click ``Terminal``
++
+image::policies/13-webhook.png[OAuth 24, 800]
+
+. Let's lookup your webhook site for this violation information.
++
+image::policies/14-webhook.png[OAuth 25, 800]
+
+[.console-input]
+[source,json,subs="attributes+,+macros"]	
+----	
+{
+  "alert": {
+    "id": "6f6a33cc-079b-406d-bc55-c5dd955d09ac",
+    "policy": {
+      "id": "8ab0f199-4904-4808-9461-3501da1d1b77",
+      "name": "Kubernetes Actions: Exec into Pod",
+      "description": "Alerts when Kubernetes API receives request to execute command in container",
+      "rationale": "'pods/exec' is non-standard approach for interacting with containers. Attackers with permissions could execute malicious code and compromise resources within a cluster",
+      "remediation": "Restrict RBAC access to the 'pods/exec' resource according to the Principle of Least Privilege. Limit such usage only to development, testing or debugging (non-production) activities",
+      "categories": [
+        "Kubernetes Events"
+****
+          "attrs": [
+            {
+              "key": "pod",
+              "value": "gateway-564d4d85d4-xr6x7"
+            },
+            {
+              "key": "container",
+              "value": "gateway"
+            },
+            {
+              "key": "commands",
+              "value": "sh -i -c TERM=xterm sh"
+            },
+            {
+              "key": "Username",
+              "value": "opentlc-mgr"
+            },
+            {
+              "key": "Groups",
+              "value": "system:authenticated:oauth, system:authenticated"
+            }
+          ]
+****
+  }
+}
+----
