@@ -128,7 +128,7 @@ image::integrations/10-webhook.png[OAuth 19, 800]
 +
 image::policies/workshop.png[OAuth 20, 800]
 +
-. Try to get terminal one of the pod.Filter and Click ``payments`` project as shown below.
+. On Administrator screen, Filter and Click ``payments`` project as shown below.
 +
 image::integrations/11-webhook.png[OAuth 22, 800]
 +
