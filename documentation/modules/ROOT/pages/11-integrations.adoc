@@ -36,11 +36,11 @@ image::integrations/04-oauth.png[OAuth 4, 800]
 +
 image::integrations/05-oauth.png[OAuth 5, 400]
 
-. Login first with the admin user
+. Login first with the opentlc-mgr user
 +
 image::integrations/06-oauth.png[OAuth 6, 400]
 
-. Admin user will have the role Admin in RH ACS, so will have full privileges in the ACS console. Check that you have full view of the Violations or Compliance among others.
+. opentlc-mgr user will have the role Admin in RH ACS, so will have full privileges in the ACS console. Check that you have full view of the Violations or Compliance among others.
 +
 image::integrations/07-oauth.png[OAuth 7, 700]
 
@@ -48,13 +48,9 @@ image::integrations/07-oauth.png[OAuth 7, 700]
 +
 image::integrations/08-oauth.png[OAuth 8, 500]
 
-. This user have very limited privileges and for example cannot see the Violations in the cluster neither compliance
+. This user have read-only privileges and for example cannot edit the Policy or etc in the cluster 
 +
 image::integrations/09-oauth.png[OAuth 9, 800]
-
-. This user only have the role of the Continuous Integration, so will only have access to the CVE analysis in the Vulnerability Management among others, but not other actions like the Violations, Policies, etc
-+
-image::integrations/10-oauth.png[OAuth 10, 800]
 
 [#integrate_acs_sso]
 == Integrate ACS with Red Hat Single Sign On
