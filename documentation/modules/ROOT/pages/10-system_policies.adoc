@@ -151,32 +151,32 @@ image::policies/16-policies.png[ACS Policies 16, 800]
 Now let's check the new policy. We will try to deploy application on Openshift Console.
 
 . Firstly, we should find our console address.
-
++
 image::policies/workshop.png[ACS Policies 17, 800]
-
++
 . Login this address on your browser 
-
++
 image::policies/console1.png[ACS Policies 18, 800]
-
++
 . Create Policy repeat steps as shown below. We will create a new project for our tests.
-
++
 image::policies/console2.png[ACS Policies 19, 800]
-
++
 . You can fill the name whatever you want.
-
++
 image::policies/console3.png[ACS Policies 20, 800]
-
++
 . At this step Click ``Topology`` and ``Container Image`` tab.
-
++
 image::policies/console4.png[ACS Policies 21, 800]
-
++
 . ``Image Name: docker.io/mysql:latest``  Click ``Create``
-
++
 image::policies/console5.png[ACS Policies 22, 800]
-
++
 . Let's review the error.
-
-image::policies/console6.png[ACS Policies 23, 800]
-
++
+image::policies/console6.png[ACS Policies 23, 300]
++
 Your enforcement works!!!
 
