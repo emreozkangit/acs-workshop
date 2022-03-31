@@ -58,8 +58,9 @@
 ** xref:10-system_policies.adoc#create_new_policy[Create New Policy]
 
 * xref:11-integrations.adoc[ACS Integrations]
-** xref:11-integrations.adoc#integrate_acs_webhook[Integrate ACS with Webhook for Audit]
 ** xref:11-integrations.adoc#integrate_acs_oauth[Integrate ACS with OpenShift OAuth]
+** xref:11-integrations.adoc#integrate_acs_webhook[Integrate ACS with Webhook for Audit]
+
 
 * xref:12-platform_configuration.adoc[ACS Secure Cluster Management]
 ** xref:12-platform_configuration.adoc#clusters[ACS Secured Clusters]
