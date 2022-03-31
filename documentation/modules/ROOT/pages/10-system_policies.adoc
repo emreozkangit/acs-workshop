@@ -158,7 +158,7 @@ image::policies/workshop.png[ACS Policies 17, 800]
 +
 image::policies/console1.png[ACS Policies 18, 800]
 +
-. Create Policy repeat steps as shown below. We will create a new project for our tests.
+. Create Project repeat steps as shown below. We will create a new project for our tests.
 +
 image::policies/console2.png[ACS Policies 19, 800]
 +
