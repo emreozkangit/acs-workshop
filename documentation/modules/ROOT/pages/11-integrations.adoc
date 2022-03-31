@@ -55,3 +55,43 @@ image::integrations/09-oauth.png[OAuth 9, 800]
 [#integrate_acs_webhook]
 == Integrate ACS with Webhook for Audit
 
+With Red Hat Advanced Cluster Security for Kubernetes, you can send alert notifications as JSON messages to any webhook receiver. When a violation occurs, Red Hat Advanced Cluster Security for Kubernetes makes an HTTP POST request on the configured URL. The POST request body includes JSON-formatted information about the alert.
+
+The webhook POST request’s JSON data includes a v1.Alert object and any custom fields that you configure, as shown in the following example:
+
+[.console-input]
+[source,json,subs="attributes+,+macros"]	
+----	
+{
+  "alert": {
+    "id": "<id>",
+    "time": "<timestamp>",
+    "policy": {
+      "name": "<name>",
+      ...
+    },
+    ...
+  },
+  "<custom_field_1>": "<custom_value_1>"
+}
+----
+
+In this section, we will integrate example webhook for audit logs.
+
+. Firsty, login the ``webhook.site`` on your private browser. Copy your unique URL. We will use this URL next step.
++
+image::integrations/01-webhook.png[OAuth 10, 800]
+
+. On the RHACS portal, navigate to Platform Configuration → Integrations. Click ``Generic Webhook``
++
+image::integrations/02-webhook.png[OAuth 11, 800]
+
+. Click New Integration (add icon).
++
+image::integrations/03-webhook.png[OAuth 12, 800]
+
+. Enter a ``Test Webhook`` for Integration Name and Enter the webhook URL(you copied URL before) in the Endpoint field.
+. Turn on the Enable Audit Logging toggle, to receive alerts about all the changes made in Red Hat Advanced Cluster Security for Kubernetes.
+. Click ``Test``
++
+image::integrations/04-webhook.png[OAuth 13, 800]
