@@ -44,7 +44,7 @@ image::integrations/06-oauth.png[OAuth 6, 400]
 +
 image::integrations/07-oauth.png[OAuth 7, 700]
 
-. Logout and login again but this time with the user user1 instead
+. Logout and login again but this time with the user user1 ( Password: ``openshift`` ) instead
 +
 image::integrations/08-oauth.png[OAuth 8, 500]
 
