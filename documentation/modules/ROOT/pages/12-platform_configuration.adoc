@@ -1,6 +1,19 @@
-= ACS Secure Cluster Management
+= ACS Platform Configuration
 include::_attributes.adoc[]
 :profile: acs
+
+[#clusters]
+== ACS Clusters
+
+The Red Hat Advanced Cluster Security for Kubernetes Clusters dashboard provides a single interface for viewing Clusters and their status.
+
+To access the Clusters dashboard:
+
+On the RHACS portal, navigate to Platform Configuration → Clusters as shown below.
+
+image::multicluster/09_multi.png[ACS Multi 9, 800]
+
+
 
 [#system_configuration]
 == ACS System Configuration
