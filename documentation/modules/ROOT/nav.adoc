@@ -71,4 +71,4 @@
 
 * xref:13-cicd.adoc[DevSecOps Pipelines]
 ** xref:13-cicd#integration_demo_ocp_pipelines[Integration Demo - Openshift Pipelines with RHACS]
-
+*** xref:13-cicd#integration_demo_ocp_pipelines_tkn_cli[Use Tekton Pipelines CLI]
