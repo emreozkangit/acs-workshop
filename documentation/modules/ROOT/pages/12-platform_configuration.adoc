@@ -69,6 +69,29 @@ The Cluster Overview shows information about your Red Hat Advanced Cluster Secur
 3. **Sensor Upgrade** - It shows whether the Sensor is running the correct version when compared with Central.
 4. **Credential Expiration** - It shows if the credentials for Red Hat Advanced Cluster Security for Kubernetes are nearing expiration.
 
+[#system_health_diagnostic]
+=== Generating Diagnostic Bundle
+
+You can generate a diagnostic bundle and send that data to enable the support team to provide insights into the status and health of Red Hat Advanced Cluster Security for Kubernetes components.
+
+Red Hat might request you to send the diagnostic bundle during investigation of your issues with Red Hat Advanced Cluster Security for Kubernetes. You can generate a diagnostic bundle and inspect its data before sending.
+
+Let's create test diagnostic bundle using RHACS portal.
+
+. On the RHACS portal, select ``Platform Configuration`` → ``System Health``
+
+. On the ``System Health`` view header, click ``Generate Diagnostic Bundle``
+
+. For the ``Filter by clusters`` drop-down menu, select the clusters for which you want to generate the diagnostic data.
+
+. For ``Filter by starting time`` , specify the date and time (in UTC format) from which you want to include the diagnostic data.
+
+. Click ``Download Diagnostic Bundle``
++
+image::multicluster/12_multi.png[ACS Multi 12, 800]
+
+
+
 [#access_control]
 == ACS Access Control
 
@@ -76,7 +99,7 @@ Red Hat Advanced Cluster Security for Kubernetes (RHACS) comes with role-based a
 
 image::multicluster/04_multi.png[ACS Multi 4, 400]
 
-Red Hat Advanced Cluster Security for Kubernetes 3.63 includes a scoped access control feature that enables you to configure fine-grained and specific sets of permissions that define how a given Red Hat Advanced Cluster Security for Kubernetes user or a group of users can interact with Red Hat Advanced Cluster Security for Kubernetes, which resources they can access, and which actions they can perform.
+Red Hat Advanced Cluster Security for Kubernetes 3.69 includes a scoped access control feature that enables you to configure fine-grained and specific sets of permissions that define how a given Red Hat Advanced Cluster Security for Kubernetes user or a group of users can interact with Red Hat Advanced Cluster Security for Kubernetes, which resources they can access, and which actions they can perform.
 
 * Roles are a collection of permission sets and access scopes. You can assign roles to users and groups by specifying rules. You can configure these rules when you configure an authentication provider. There are two types of roles in Red Hat Advanced Cluster Security for Kubernetes:
 
