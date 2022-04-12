@@ -19,22 +19,22 @@ The roxctl command line interface has a number of options for resource and image
 On your own demo environment, Red Hat deployed a pipeline example. Let's examine.
 
 . Login your OpenShift Console and change your view to Administrator
++
+NOTE: Project should be ``stackrox-pipeline-demo``
 
 . Click ``Pipelines`` and ``Pipeline Runs`` section as shown below. 
-
-NOTE: Project should be ``stackrox-pipeline-demo``
- 
++ 
 image::cicd/00_pipeline.png[ACS Cicd 1, 800]
 
 . Click one of the ``Failed`` Pipeline Runs
-
++
 image::cicd/01_pipeline.png[ACS Cicd 2, 800]
 
 . Now, you can see some summary of your Pipeline at the right down side.
-
++
 image::cicd/02_pipeline.png[ACS Cicd 3, 800]
 
 . Looking closer at the detail of the tasks in the pipeline, and examining the output of the “deploy-check” task shows that more files have been examined as shown below.
-
++
 image::cicd/03_pipeline.png[ACS Cicd 4, 800]
 
