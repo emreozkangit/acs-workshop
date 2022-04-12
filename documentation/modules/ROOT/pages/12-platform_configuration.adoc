@@ -121,4 +121,4 @@ image::multicluster/08_multi.png[ACS Multi 6, 800]
 1. **System access scopes**, which are created by Red Hat and cannot be changed.
 2. **Custom access scopes**, which Red Hat Advanced Cluster Security for Kubernetes administrators can create and change at any time.
 
-For more information about RBAC and the integration with third parties for https://docs.openshift.com/acs/3.66/operating/manage-user-access/manage-role-based-access-control-3630.html#rbac-system-roles-3630_manage-role-based-access-control[User Access]
+For more information about RBAC and the integration with third parties for https://docs.openshift.com/acs/3.69/operating/manage-user-access/manage-role-based-access-control-3630.html#rbac-system-roles-3630_manage-role-based-access-control[User Access]

@@ -2,59 +2,15 @@
 include::_attributes.adoc[]
 :profile: acs
 
-[#integrate_ocp_pipelines]
-== Integrate Openshift Pipelines with RHACS
+[#integration_demo_ocp_pipelines]
+== Integration Demo - Openshift Pipelines with RHACS
 
-https://cloud.redhat.com/blog/using-openshift-pipelines-to-automate-red-hat-advanced-cluster-security-for-kubernetes[Using OpenShift Pipelines to Automate Red Hat Advanced Cluster Security for Kubernetes]
+This section shows how OpenShift Pipelines, based on the Tekton open source project, can be used to automate the execution of Red Hat Advanced Cluster Security for Kubernetes as part of a wider continuous integration solution.The objective is to bring into the continuous integration process the validation of Kubernetes resources such that any violations against defined policy can be addressed earlier in the development life cycle.
 
-TODO: finish the writing.
+== RHACS Command Line Interface
 
-[#install_devsecops_pipelines]
-== Installing ACS DevSecOps Pipeline
+Red Hat Advanced Cluster Security for Kubernetes has a command line interface (roxctl) for the evaluation of images and resources against policy definitions held on the RHACS server. The command line interface may be downloaded from the RHACS web user interface for ad-hoc use, and in the automation steps presented here, roxctl is downloaded from the RHACS server during each execution of the analysis. This ensures that the correct version matching the server is always used.
 
-Based in https://github.com/rcarrata/devsecops-demo[DevSecOps Pipeline Repo] we will deploy in our Openshift cluster a full DevSecOps pipeline example to see the integration of RHACS to a CICD Pipeline.
+=== Roxctl Analysis Options
 
-image::cicd/00-acs_cicd_overview.png[ACS CICD 1, 800]
-
-Download the demo and install the prereqs:
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-git clone https://github.com/rcarrata/devsecops-demo.git
-ansible-galaxy collection install community.kubernetes
-cd devsecops-demo
-----
-
-Install the demo in Stackrox: 
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-git clone https://github.com/rcarrata/devsecops-demo.git
-ansible-galaxy collection install community.kubernetes
-cd devsecops-demo
-----
-
-Check the status of the devsecops pipelines demo:
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-./status.sh
-----
-
-[#run_devsecops_pipelines]
-== Running the demo of DevSecOps Pipeline
-
-Run the demo with:
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-./demo.sh start
-----
-
-Go to the namespace of ```cicd``` and check the Pipelines resources with the PipelineRun like the following:
-
-image::cicd/01-devsecops_pipeline.png[ACS CICD 2, 800]
-
-For more information check the https://github.com/rcarrata/devsecops-demo[original repo] or the https://github.com/RedHatDemos/SecurityDemos/blob/master/2021Labs/OpenShiftSecurity/documentation/lab4.adoc[Security Lab guide] that have all the details and caveats.
+The roxctl command line interface has a number of options for resource and image analysis. Of particular interest in this section is the “deployment” option, which traditionally is used to check for deployment readiness of Kubernetes resources. By using this option during the build phase of development, teams can get a much earlier indication of deployment issues rather than waiting until deployment time. This enables teams to fix the problems during development, which will lower costs and lead to smoother deployments.
