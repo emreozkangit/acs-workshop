@@ -51,7 +51,7 @@ Here we show how ACS continuously monitors runtime activity within pods in the d
 image::risks/07-risks.png[ACS Risks 7, 500]
 +
 
-This 4 process started without our knowledge after creating baseline.However you can add this process to baseline to click plus button.
+This 4 process started without our knowledge after creating baseline.You can add this process to baseline.Please click plus button.
 
 +
 image::risks/08-risks.png[ACS Risks 8, 500]

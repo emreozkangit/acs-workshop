@@ -103,7 +103,7 @@ image::install/04_3_create_central_resource.png[ACS Operator 53, 800]
 
 You can also do the same using the ``Developer`` perspective:
 
-. Within the ``stackrock`` project selected, **+Add → Import YAML**
+. Within the ``stackrox`` project selected, **+Add → Import YAML**
 +
 image::install/04_11_create_central_resource.png[ACS Operator 511, 800]
 
