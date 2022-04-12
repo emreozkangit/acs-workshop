@@ -11,7 +11,7 @@ At this screen , you can add , upgrade and delete clusters.
 
 To access the Clusters dashboard:
 
-On the RHACS portal, navigate to Platform Configuration → Clusters as shown below.
+On the RHACS portal, navigate to ``Platform Configuration`` → ``Clusters`` as shown below.
 
 image::multicluster/09_multi.png[ACS Multi 9, 800]
 
@@ -20,7 +20,7 @@ image::multicluster/09_multi.png[ACS Multi 9, 800]
 
 To access the System Configuration dashboard:
 
-On the RHACS portal, navigate to Platform Configuration → System Configuration as shown below.
+On the RHACS portal, navigate to ``Platform Configuration`` → ``System Configuration`` as shown below.
 
 image::multicluster/11_multi.png[ACS Multi 11, 300]
 
@@ -43,7 +43,7 @@ The Red Hat Advanced Cluster Security for Kubernetes system health dashboard pro
 
 To access the health dashboard:
 
-* On the RHACS portal, navigate to Platform Configuration → System Health.
+* On the RHACS portal, navigate to ``Platform Configuration`` → ``System Health``
 
 image::multicluster/02_multi.png[ACS Multi 2, 800]
 
