@@ -5,7 +5,9 @@ include::_attributes.adoc[]
 [#clusters]
 == ACS Clusters
 
-The Red Hat Advanced Cluster Security for Kubernetes Clusters dashboard provides a single interface for viewing Clusters and their status.
+The Red Hat Advanced Cluster Security for Kubernetes Clusters dashboard provides a single interface for viewing Clusters and their components status.
+
+At this screen , you can add , upgrade and delete clusters.
 
 To access the Clusters dashboard:
 
@@ -13,18 +15,22 @@ On the RHACS portal, navigate to Platform Configuration → Clusters as shown be
 
 image::multicluster/09_multi.png[ACS Multi 9, 800]
 
-
-
 [#system_configuration]
 == ACS System Configuration
 
-Check into the https://docs.openshift.com/acs/3.66/configuration/enable-alert-data-retention.html[official documentation] the different configuration tweaks that you can do in the RH ACS cluster:
+To access the System Configuration dashboard:
 
-image::multicluster/03_multi.png[ACS Multi 3, 800]
+On the RHACS portal, navigate to Platform Configuration → System Configuration as shown below.
+
+image::multicluster/11_multi.png[ACS Multi 11, 300]
+
+If you want to change any config, you can click ``Edit`` 
+
+image::multicluster/10_multi.png[ACS Multi 10, 800]
 
 The options are:
 
-* https://docs.openshift.com/acs/3.66/configuration/enable-alert-data-retention.html[Data Retention Configuration]
+* https://docs.openshift.com/acs/3.69/configuration/enable-alert-data-retention.html[Data Retention Configuration]
 * Header Configuration
 * Footer Configuration
 * Login Notice Configuration
