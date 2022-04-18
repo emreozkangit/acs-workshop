@@ -86,20 +86,20 @@ You can create new security policies from the system policies view.
 image::policies/11-policies.png[ACS Policies 11, 800]
 +
 . Enter the following details about your policy in the Policy details section:
-* Enter an example Name for the policy. ``Example Docker Hub Policy`` 
-We will create an example policy for Docker Hub Registry because we dont want to download images from this registry.
+* Enter an example Name for the policy. ``Example Process Policy`` 
+We will create an example policy for process.
 * Select a Severity level for this policy, either Critical, High, Medium, or Low. You can select ``Medium``
 * Select policy Categories you want to apply to this policy. Select ``Devops Best Practices``
 * Enter details about the policy in the Description box.
-* Enter an explanation about why the policy exists in the Rationale box. ``we dont want to download images from this registry.``
-* Enter steps to resolve violations of this policy in the Guidance box.Developer can see this message. For example ``You can use just registry.redhat.io images. Please change your current image.``
+* Enter an explanation about why the policy exists in the Rationale box. ``we dont want to use dd command in the container.``
+* Enter steps to resolve violations of this policy in the Guidance box.Users can see this message. For example ``Please dont use "dd" command in the container``
 * Optional: Under the MITRE ATT&CK section, select the tactics and the techniques you want to specify for the policy.You can add tactics and techniques for this policy.
 +
 image::policies/12-policies.png[ACS Policies 12, 900]
 +
 . Click ``Next``
 . In the Policy behavior section, select the Lifecycle stages and Event sources (Runtime lifecycle only) for the policy.
-* Choose Lifecycle Stages to which your policy is applicable, from Build, Deploy, or Runtime.  We will select ``Build and Deploy`` for this example. You can select more than one stage.
+* Choose Lifecycle Stages to which your policy is applicable, from Build, Deploy, or Runtime.  We will select ``Runtime`` for this example. You can select more than one stage.
 
 ** Build-time policies apply to image fields such as CVEs and Dockerfile instructions.
 
@@ -130,7 +130,7 @@ Let's look differences:
 +
 image::policies/14-policies.png[ACS Policies 14, 100]
 +
-. We will use ``Image Registry`` criteria at the ``Image Registry`` category as shown below.You can drag and drog and fill-up the box with ``docker.io``
+. We will use ``Process Activity`` criteria at the ``Process Name`` category as shown below.You can drag and drog and fill-up the box with ``dd``
 +
 image::policies/15-policies.png[ACS Policies 15, 800]
 +
@@ -148,7 +148,7 @@ image::policies/16-policies.png[ACS Policies 16, 800]
 . In the Review policy section, preview the policy violations at the right side.
 . Click ``Save``
 
-Now let's check the new policy. We will try to deploy application on Openshift Console.
+Now let's check the new policy. We will try to run ``dd`` command one of container on Openshift Console.
 
 . Firstly, we should find our console address.
 +
