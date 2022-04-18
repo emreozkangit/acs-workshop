@@ -130,7 +130,7 @@ Let's look differences:
 +
 image::policies/14-policies.png[ACS Policies 14, 100]
 +
-. We will use ``Process Activity`` criteria at the ``Process Name`` category as shown below.You can drag and drog and fill-up the box with ``dd``
+. We will use ``Process Name`` criteria at the ``Process Activity`` category as shown below.You can drag and drog and fill-up the box with ``dd``
 +
 image::policies/15-policies.png[ACS Policies 15, 800]
 +
@@ -170,7 +170,7 @@ image::policies/console3.png[ACS Policies 20, 800]
 +
 image::policies/console4.png[ACS Policies 21, 800]
 +
-. ``Image Name: docker.io/mysql:latest``  Click ``Create``
+. ``Image Name: registry.redhat.io/rhscl/httpd-24-rhel7s``  Click ``Create``
 +
 image::policies/console5.png[ACS Policies 22, 800]
 +
