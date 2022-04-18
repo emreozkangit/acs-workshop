@@ -174,9 +174,19 @@ image::policies/console4.png[ACS Policies 21, 800]
 +
 image::policies/console5.png[ACS Policies 22, 800]
 +
-. Let's review the error.
+. If your pod is running, Click your pod name as shown below.
 +
 image::policies/console6.png[ACS Policies 23, 300]
 +
-Your enforcement works!!!
+. Let's write down ``dd``
++
+image::policies/console7.png[ACS Policies 24, 400]
++
+. Your enforcement's works.
++
+image::policies/console8.png[ACS Policies 25, 500]
++
+. Let's review at the violation section on your central.
++
+image::policies/console9.png[ACS Policies 26, 800]
 
