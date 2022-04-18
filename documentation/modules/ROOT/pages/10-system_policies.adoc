@@ -178,16 +178,18 @@ image::policies/console5.png[ACS Policies 22, 800]
 +
 image::policies/console6.png[ACS Policies 23, 800]
 +
-. Let's write down ``dd``
+. Let's write down ``dd`` on your pod terminal
 +
 image::policies/console7.png[ACS Policies 24, 800]
 +
-. Your enforcement's works.
+. Your enforcement's works. Your pod is killed by ACS.
 +
 image::policies/console8.png[ACS Policies 25, 800]
 +
 . Let's review at the violation section on your central.
 +
 image::policies/console9.png[ACS Policies 26, 800]
++
+. Click on your violations for the details.
 +
 image::policies/console10.png[ACS Policies 27, 800]
